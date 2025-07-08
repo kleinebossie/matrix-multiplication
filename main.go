@@ -18,7 +18,7 @@ func main() {
 
 	err := checkValid(cols1, rows2)
 	if err != nil {
-		fmt.Println(err)
+		log.Fatal(err)
 	}
 
 	fmt.Println("---Fill in first matrix---\n")
@@ -108,9 +108,9 @@ func multiplyMatrices(m1, m2 Matrix) Matrix {
 		matrix.Data[i] = make([]float64, matrix.Cols)
 	}
 
-	for i := range matrix.Rows {
-		for j := range matrix.Cols {
-			for k := range m2.Rows {
+	for i := 0; i < matrix.Rows; i++ {
+		for j := 0; j < matrix.Cols; j++ {
+			for k := 0; k < m2.Rows; k++ {
 				matrix.Data[i][j] += m1.Data[i][k] * m2.Data[k][j]
 			}
 		}
