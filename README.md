@@ -4,13 +4,13 @@ A simple command-line interface program written in Go that performs matrix multi
 
 ---
 
-## 🔗 Project Link
+## Project Link
 
 [https://github.com/kleinebossie/matrix-multiplication](https://github.com/kleinebossie/matrix-multiplication)
 
 ---
 
-## 🛠 Features
+## Features
 
 - Prompt-based CLI for entering matrix sizes and values
 - Dimension validation for multiplication
@@ -19,14 +19,14 @@ A simple command-line interface program written in Go that performs matrix multi
 
 ---
 
-## ⚙️ Requirements
+## Requirements
 
 - Go 1.20 or higher (or any version with support for modules and `go run`)
 - Terminal/command prompt access
 
 ---
 
-## 🚀 Usage
+## Usage
 
 1. **Clone the repo**:
    ```bash
@@ -42,7 +42,7 @@ A simple command-line interface program written in Go that performs matrix multi
    - Input all values row by row.
    - The program multiplies the matrices and prints the result.
 
-## 🧠 Example
+## Example
 
 ```bash
 ***Matrix Multiplication CLI***
@@ -81,7 +81,7 @@ Column 2: 12
 [139 154]
 ```
 ---
-## 🧱 Structure
+## Structure
 
 Main file: main.go
 
@@ -91,12 +91,12 @@ Main file: main.go
 - checkValid() – checks multiplication compatibility
 - multiplyMatrices() – multiplies two matrices and returns the result
 
-## 📌 Notes
+## Notes
 
 Input must be valid numbers; bad input will crash the program (no input sanitization).
 Only works with float64 values (entered as numbers, not fractions).
 Strictly synchronous and linear—no concurrency or advanced optimizations.
 
-## 📃 License
+## License
 
 **MIT**
