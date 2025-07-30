@@ -8,6 +8,7 @@ import (
 
 func main() {
 	fmt.Println("***Matrix Multiplication CLI***\n")
+	// test comment
 
 	// Get dimensions for the first matrix
 	fmt.Println("---First matrix size---")
